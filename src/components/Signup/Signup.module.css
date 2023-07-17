@@ -1,0 +1,84 @@
+.container {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to top,
+    #d6bfcc,
+    #d4bed1,
+    #d0bdd8,
+    #c9bedf,
+    #bfbfe5,
+    #b3c0e6,
+    #a7c2e6,
+    #9cc3e4,
+    #94c3db,
+    #90c2d1,
+    #91c0c6,
+    #94bebc
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerBox {
+  min-width: 480px;
+  height: fit-content;
+  width: fit-content;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer .error {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ff3300;
+  text-align: center;
+}
+
+.footer button {
+  outline: none;
+  border: none;
+  background-color: #9900ff;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 16px;
+  width: 100%;
+  transition: 100ms;
+  cursor: pointer;
+}
+
+.footer button:disabled {
+  background-color: gray !important;
+}
+
+.footer button:hover {
+  background-color: #aa2aff;
+}
+
+.footer p {
+  font-weight: 700;
+  color: #000;
+}
+
+.footer p span a {
+  font-weight: bold;
+  color: #9900ff;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-decoration: none;
+}
